@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | CS309 Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="site-header">
+            <h3>CS309 Website</h3>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+        </header>
+        <h1>Contact the Course Team</h1>
+        <p>Use this form to ask a question or request help with the CS309 course.</p>
+
+        <form action="#" method="get">
+            <p>
+                <label for="student-name">Name:</label><br>
+                <input type="text" id="student-name" name="student-name" required>
+            </p>
+
+            <p>
+                <label for="student-email">Email:</label><br>
+                <input type="email" id="student-email" name="student-email" required>
+            </p>
+
+            <p>
+                <label for="student-id">Student ID (number):</label><br>
+                <input type="number" id="student-id" name="student-id" min="1">
+            </p>
+
+            <p>
+                <label for="preferred-date">Preferred date:</label><br>
+                <input type="date" id="preferred-date" name="preferred-date">
+            </p>
+
+            <fieldset>
+                <legend>How should we reply?</legend>
+                <label><input type="radio" name="reply-method" value="email" checked> Email</label><br>
+                <label><input type="radio" name="reply-method" value="in-person"> In person</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What do you need help with? (Choose any that apply)</legend>
+                <label><input type="checkbox" name="help-topic" value="lecture"> Lecture topics</label><br>
+                <label><input type="checkbox" name="help-topic" value="assignment"> An assignment</label><br>
+                <label><input type="checkbox" name="help-topic" value="other"> Something else</label>
+            </fieldset>
+
+            <p>
+                <label for="course-topic">Select a course topic:</label><br>
+                <select id="course-topic" name="course-topic">
+                    <option value="" selected disabled>Choose a topic</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Your question or message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <br>
+        <hr>
+        <h5>Created by Philopateer Farag <a href="https://www.facebook.com/philopateer.farag" target="_blank" rel="noopener noreferrer">Facebook</a> <a href="https://www.github.com/philopateer180" target="_blank" rel="noopener noreferrer">Github</a></h5>
+    </body>
+</html>
+
+
